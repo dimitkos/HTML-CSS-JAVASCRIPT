@@ -199,6 +199,30 @@ table {
     }
   </style>
 
+<!-- πρώτο Βιβλίο -->
+  <style>
+    p.textBook1
+    {
+        font-family: Times New Roman;
+        font-size: 21pt;
+        color: white;
+        position: relative;
+        top: -320px;
+        left: 260px;
+        
+    }
+  </style>
+
+
+  <!--το βαζουμε για να καθοριζει την θεση της εικονας του 1ου Βιβλίου-->
+  <style>
+  #imageBook1{
+      position: relative;
+      top: -185px;
+      left: 110px;
+  }
+</style>
+
 </head>
 <body>
 
@@ -215,7 +239,7 @@ table {
   <div class="vl2"></div>
 
 
-  <table>
+  <table >
       <tr>
           <td><p class="text"> <b>Θέματα Βιβλίων Πληροφορικής</b></p></td>
       </tr>
@@ -263,16 +287,28 @@ table {
 
 <table>
     <tr>
-    <td> 
-    <p class="text2"> <b>Βιβλία Τεχνολογιών Διαδικτύου</b></p> 
+      <td> 
+        <p class="text2"> <b> Βιβλία Τεχνολογιών Διαδικτύου</b></p> 
       <!-- καλώ  μικρή γκρι γραμμή πάνω-->
       <hr class="above"> 
     </td> 
   </tr>
 
     <tr>
-      
-    </tr>
+      <td> <!--τοποθετηση της εικόνας με συγκεκριμένες διαστάσεις και σημείο οπου βρίσκεται-->
+        <img id="imageBook1" src="http://www.biblionet.gr/images/covers/b194109.jpg" alt="Pineapple"  style="width:130px; height:170px; ">
+      </td>
+    </tr> 
+   
+  <tr>
+    <td>
+      <!--αν πατήσουμε το ονομα του καθηγητή να του στέλνει email-->
+      <p class="textBook1"> 
+        <a href=" http://tinyurl.com/lcejwys" target="_blank"> Τεχνολογίες διαδικτύου </a><br>
+        <a href="mailto:cdoulig@unipi.gr"> Δουληγέρης, Χρήστος;  Μαυροπόδη, Ρόζα; Κοπανάκη, Εύη; <br> διαθέσιμο </a>,</p>
+    </td>
+  </tr>
+
 
 </table>
 
