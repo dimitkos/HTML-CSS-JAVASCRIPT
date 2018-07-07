@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- επανω γκρι γραμμη-->
+  <style>
+    hr.gr 
+    {
+        height: 120px;
+        color: grey;
+        background: grey;
+        font-size: 0;
+        border: 0;
+        position: relative;
+        left: 0px;
+        top: -80px;
+        z-index: -1;
+    }
+  </style>
+    <!-- Κεντρικό τίτλος πάνω πάνω-->
+  <style>
+    p.title 
+    {
+        position: relative;
+        left: 600px;
+        top: -140px;
+    }
+  </style>
+
+
+
+
+  <!-- αριστερη γκρι γραμμη-->
+    <style>
+      .vl1 
+      {
+          border-left: 40px solid grey;
+          height: 618px;
+          left: 0%;
+          position: absolute;
+          margin-left: -3px;
+          top: 0;
+      }
+    </style>
+
+  <!-- δεξια γκρι γραμμη-->
+    <style>
+      .vl2 
+      {
+          border-left: 40px solid grey;
+          height: 618px;
+          left: 97.5%;
+          position: absolute;
+          margin-left: -3px;
+          top: 0;
+      }
+    </style>
+
+  <!-- Θέματα βιβλίων πληροφορική-->
+  <style>
+    p.text 
+    {
+        font-family: Arial;
+        font-size: 15pt;
+        color: blue;
+        position: relative;
+        left: 35px;
+        top: -20px;
+    }
+  </style>
+
+  <!-- Βιβλία-->
+  <style>
+    p.list 
+    {
+        font-family: Arial;
+        font-size: 10pt;
+        color: black;
+        position: relative;
+        left: 50px;
+        top: -10px;
+      }
+  </style>
+
+  <!-- Style για την τοποθέτηση των Βιβλίων Πληροφορικής-->
+    <style>
+      .intro
+      {
+         position: absolute;
+          left: 55px;
+          top:  190px;
+          font-family: Verdana, sans-serif;
+          color: black;
+          font-size: 13pt;
+          text-indent: 2px;
+        }
+    </style>
+
+<style>
+    p.text1 
+    {
+        font-family: Arial;
+        font-size: 15pt;
+        color: blue;
+        position: relative;
+        left: 35px;
+        top: 100px;
+    }
+  </style>
+
+  <!--΅dropdown List-->
+  <style>
+    p.select 
+    {
+      line-height: 20px;
+        position: relative;
+        left: 36px;
+        top: 100px;
+    }
+  </style>
+
+
+<!-- Φόρμα-->
+<style>
+input{
+    width: 75%;
+    padding: 3px;
+
+    border: 1px solid #01DFD7;
+    position:relative;
+    left: -117px;
+    top:100px;
+}
+</style>
+
+<!-- Πίνακες-->
+<style>
+table {
+    float:left;
+    margin-left:10px;
+}
+</style>
+
+<!-- κουμπί-->
+  <style>
+    .button 
+    { 
+        width: 100px;
+        padding: 1px;
+        position: relative;
+        left: 220px;
+        top: 100px;
+        background-color: white;
+        color: black;
+        border: 1px solid #008CBA;
+    }
+  </style>
+
+  <!-- ΔΕΞΙΑ ΠΙΝΑΚΑΣ-->
+
+<style>
+    p.text2 
+    {
+        font-family: Arial;
+        font-size: 15pt;
+        color: white;
+        position: relative;
+        left: 107px;
+        top: -132px;
+    }
+  </style>
+
+  <!-- μικρή γκρι γραμμή πάνω-->
+  <style>
+    hr.above
+    {
+        height: 40px;
+        width: 830px;
+        color: grey; 
+        background-color: grey;
+        position:relative;
+        left:104px;
+        top:-185px;
+        z-index: -1;
+    }
+  </style>
+
+  <!-- μικρή γκρι γραμμή κάτω-->
+  <style>
+    hr.bottom 
+    {
+        height: 30px;
+      width: 400px;
+        color: grey; 
+        background-color: grey;
+      position:relative;
+      left:200px;
+      top:200px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- επανω γκρι γραμμη-->
+  <hr class="gr" />
+
+  <!-- Heading Βιβλία πληροφορικής με χρώμα, στοίχιση, γραμματοσειρά και μέγεθος-->
+  <p class="title"><b><font color="white"><font face = "Times New Roman" size = "6">Βιβλία Πληροφορικής</font></b></p>
+
+  <!-- αριστερη γκρι γραμμη-->
+  <div class="vl1"></div>
+
+  <!-- δεξια γκρι γραμμη-->
+  <div class="vl2"></div>
+
+
+  <table>
+      <tr>
+          <td><p class="text"> <b>Θέματα Βιβλίων Πληροφορικής</b></p></td>
+      </tr>
+
+      <tr>
+          <td>
+            <p class="list"></p>
+
+            <div class="intro">
+
+  <ul style="list-style-type:square;">
+      <li>Τεχνολογίες Διαδικτύου</li>
+      <li>Λειτουργικά Συστήματα</li>
+      <li>Δίκτυα - Επικοινωνίες</li>
+      <li>Γλώσσες προγραμματισμού</li>
+      <li>Πληροφορικά Συστήματα</li>
+    </ul>
+  </div></td>
+      </tr>
+
+
+      <tr>
+          <td><p class="text1"> <b>Κριτήρια αναζήτησης βιβλίων</b></p></td>
+      </tr>
+
+      <tr>
+          <td><p class="select"><select>
+      <option value="volvo">Θεματική περιοχή</option>
+      <option value="saab">Τίτλος</option>
+      <option value="opel">Συγγραφέας</option>
+      <option value="audi">Χρονολογία έκδοσης</option>
+  </select></p></td>
+
+
+          <td><input type="text" id="fname" name="firstname" ></td>
+      </tr>
+
+      <tr> <td> <input type="button" class="button"  value="Αναζήτηση"></td></tr>
+
+
+
+
+  </table>
+
+
+<table>
+    <tr>
+    <td> 
+    <p class="text2"> <b>Βιβλία Τεχνολογιών Διαδικτύου</b></p> 
+      <!-- καλώ  μικρή γκρι γραμμή πάνω-->
+      <hr class="above"> 
+    </td> 
+  </tr>
+
+    <tr>
+      
+    </tr>
+
+</table>
+
+
+</body>
+</html>
+
