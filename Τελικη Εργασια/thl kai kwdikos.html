@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>telikh ergasia</title>
+<!-- ξεκινάει το script  όπου θα ελέγχει τα πεδία password και τηλέφωνο αν ειναι έγγυρα-->
+<!-- για το password  ελεγχει την περίπτωση όπου είναι κενό και αν είναι μεγαλύτερο απο 7 χαρακτήρες-->
+<!-- για το τηλεφωνο  ελεγχει αρχικά την περίπτωση όπου είναι κενό,αν δεν είναι αριθμός και αν είναι μικρότερο  απο 10 ψηφία-->
+<script type="text/javascript">
+function val(){
+
+	if(frm.password.value=="")
+	{
+		alert("Please enter the password");
+		frm.password.focus();
+		return false;
+	}
+	if((frm.password.value).length > 7 )
+	{
+		alert("password should be until 7 digits");
+		frm.password.focus();
+		return false;
+	}
+if(frm.phone.value=="")
+{
+	alert("Please enter the phone number");
+	frm.phone.focus();
+	return false;
+}
+if(isNaN(frm.phone.value))
+{
+	alert("Invalid phone number");
+	frm.phone.focus();
+	return false;
+}
+if((frm.phone.value).length < 10 )
+{
+	alert("Phone number should be minimum 10 digits");
+	frm.phone.focus();
+	return false;
+}
+
+return true;
+}
+</script>
+
+
+</head>
+<body>
+
+<form name="frm" method="post" >
+    Ονοματεπώνυμο:<br>
+    <input type="text" name="name">
+    <br>
+    Ειδικότητα:<br>
+    <input type="text" name="faculty">
+    <br>
+    Email:<br>
+    <input type="text" name="Email">
+    <br>
+    Κωδικός:<br>
+    <input type="text" name="password">
+    <br>
+    <br>
+    Phone: <br><input type="text" name="phone" placeholder="Enter Phone Number" />
+    <br><br>
+  <input type="submit" value="Submit" onclick=" val() ;" /> </form>
+
+
+</body>
+</html>
